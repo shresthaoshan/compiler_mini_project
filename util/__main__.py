@@ -1,3 +1,4 @@
+import sys
 from tester import tester
 
 # what we already have
@@ -13,7 +14,7 @@ _table = {
 }
 
 # what we need to check
-_inputString = 'a=a*a'
+_inputString = sys.argv[1] if len(sys.argv) == 2 else 'a=a*a'
 print()
 print("input: {}".format(_inputString))
 
